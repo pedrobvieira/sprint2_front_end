@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+    <title>Clientes</title>
+</head>
+
+<body>
+    <article>
+
+        <!-- Cabeçalho de informações do sistema -->
+        <header>
+            <div class="title">
+                <h2>Cadastro de Clientes
+                    <button type="button" class="login" onclick="login()">
+                           <img src="img/person-fill.svg" width="20px" height="20px">
+                           <span id="login-mostrar" name="login-mostrar">Login</span>
+                    </button>
+                </h2>
+            </div>
+        </header>
+
+         <!-- Opções para adicionar um novo item -->
+        <section class="newItem">
+            <input type="text" id="newNome" placeholder="Nome do cliente:">
+            <input type="text" id="newCpf" placeholder="Cpf">
+            <input type="text" id="newCelular" placeholder="Celular:">
+            <input type="text" id="newCep" placeholder="Cep">
+            <input type="text" id="newComentario" placeholder="Comentário:">
+                <span onclick="newItemLog()"  id="alterar" class="addBtn">Adicionar</span>
+        </section>
+
+        <!-- Tabela com items existentes -->
+        <section class="items">
+            <table id="myTable">
+                <!-- <th style="display: none">Id</th> -->
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Celular</th>
+                <th>Cep</th>
+                <th>Comentário</th>
+                <th><img src="img/cesto-de-lixo.png" width="20px" height="20px"></th>
+                <th><img src="img/pencil.svg"  width="20px" height="20px"></th>
+
+            </table>
+        </section>
+
+    </article>
+</body>
+
+</html>
+
+
